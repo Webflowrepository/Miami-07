@@ -74,14 +74,14 @@ import '../styles/global.css';
 <style>
   /* ── HERO ── */
   .hero-section {
-    min-height: 68vh;
+    min-height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 24px;
-    padding: 48px 24px;
+    padding: 24px 24px;
     box-sizing: border-box;
   }
 
@@ -159,7 +159,7 @@ import '../styles/global.css';
 
   .hero-scroll-arrow {
     color: var(--color-fg-muted);
-    margin-top: 12px;
+    margin-top: 4px;
     animation: hero-bounce 2s ease-in-out infinite;
     width: 28px;
     height: 28px;
@@ -172,11 +172,11 @@ import '../styles/global.css';
 
   /* ── Tighten gap between hero and gallery start ── */
   .hero-section + :global(.gallery-section) {
-    padding-top: 12px;
+    padding-top: 0px;
   }
 
   .hero-section + :global(.gallery-section) :global(.gallery-container) {
-    gap: 16px;
+    gap: 8px;
   }
 
   /* ── NEXT EVENT WRAPPER ── */
@@ -248,8 +248,8 @@ import '../styles/global.css';
   /* ── Mobile: fit hero in 100vh ── */
   @media (max-width: 767px) {
     .hero-section {
-      min-height: 68vh;
-      min-height: 68dvh;
+      min-height: 48vh;
+      min-height: 48dvh;
       padding: 48px 20px;
     }
 
@@ -286,7 +286,7 @@ import '../styles/global.css';
     }
 
     .hero-scroll-arrow {
-      margin-top: 16px;
+      margin-top: 4px;
       width: 22px;
       height: 22px;
     }
@@ -295,7 +295,7 @@ import '../styles/global.css';
   /* ── Desktop ── */
   @media (min-width: 768px) {
     .hero-section {
-      padding: 96px 64px;
+      padding: 32px 64px;
     }
   }
 </style>
